@@ -1,47 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 422" width="1200" height="422" role="img" aria-labelledby="title desc">
-  <title id="title">Saurabh Batra — Frontend-Led Full Stack Engineer</title>
-  <desc id="desc">Building AI-powered products, engineering interactive experiences, and turning ideas into software.</desc>
-  <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1722"/><stop offset="1" stop-color="#091017"/></linearGradient>
-    <linearGradient id="edge"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#4f8ac9" stop-opacity=".25"/></linearGradient>
-    <radialGradient id="glow"><stop stop-color="#134e4a" stop-opacity=".3"/><stop offset="1" stop-color="#134e4a" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#7cb0ba" stroke-opacity=".035"/></pattern>
-  </defs>
-  
-  <rect x="1" y="1" width="1198" height="420" rx="18" fill="url(#bg)" stroke="#28404d"/>
-  <rect x="2" y="2" width="1196" height="418" rx="17" fill="url(#grid)"/>
-  <ellipse cx="1040" cy="190" rx="290" ry="205" fill="url(#glow)"/>
-  <path d="M22 49 H1178" stroke="#21313e"/>
-  <g fill="#4b6371"><circle cx="58" cy="26" r="4"/><circle cx="74" cy="26" r="4"/><circle cx="90" cy="26" r="4"/></g>
-  <text x="120" y="30" fill="#93adba" font-family="Consolas, monospace" font-size="11" letter-spacing="1">saurabh@github ~ / portfolio</text>
-  <text x="58" y="112" fill="#5eead4" font-family="Consolas, monospace" font-size="13" letter-spacing="3">ENGINEERING / INTERFACES / EXPERIENCES</text>
-  <text x="55" y="177" fill="#eff8fb" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">SAURABH BATRA</text>
-  <g fill="#5eead4" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500"><text class="r0" x="58" y="234" opacity="1">Frontend-Led Full Stack Engineer</text></g>
-  <text x="58" y="276" fill="#9ab1bf" font-family="Consolas, monospace" font-size="16">Frontend craft. Full-stack thinking.</text>
-  
-    <g fill="none" stroke="#244750" stroke-width="1.5">
-      <path d="M907 125 L1020 190 L907 255 L794 190 Z"/>
-      <path d="M907 125 V255 M794 190 H1020 M851 157 L964 222 M964 157 L851 222"/>
-      <path d="M794 190 L755 212 V284 H907 V255 M1020 190 L1060 166 V109" stroke-dasharray="3 7"/>
-      <path d="M851 157 L907 125 L964 157" stroke="#5eead4" stroke-width="2"/>
-    </g>
-    <g fill="#0d1d27" stroke="#31565f">
-      <rect x="879" y="106" width="56" height="38" rx="9"/>
-      <rect x="766" y="171" width="56" height="38" rx="9"/>
-      <rect x="992" y="171" width="56" height="38" rx="9"/>
-      <rect x="879" y="236" width="56" height="38" rx="9"/>
-    </g>
-    <g fill="#9cb9c6" font-family="Consolas, monospace" font-size="12" text-anchor="middle">
-      <text x="907" y="130">UI</text><text x="794" y="195">API</text>
-      <text x="1020" y="195">AI</text><text x="907" y="260">UX</text>
-    </g>
-    <circle cx="907" cy="190" r="10" fill="#5eead4"/>
-    <circle cx="907" cy="190" r="22" fill="none" stroke="#5eead4" stroke-opacity=".2"/>
-    <text x="907" y="314" fill="#7e9ba8" font-family="Consolas, monospace" font-size="11" letter-spacing="2" text-anchor="middle">SYSTEMS / WITH A HUMAN INTERFACE</text>
-    
-  <path d="M58 325 H1142" stroke="url(#edge)"/>
-  <text x="58" y="359" fill="#70909e" font-family="Consolas, monospace" font-size="12">$</text>
-  <text x="78" y="359" fill="#c4d6df" font-family="Consolas, monospace" font-size="14">build thoughtful software</text>
-  <rect x="283" y="346" width="7" height="16" fill="#5eead4" opacity=".7"/>
-  <text x="58" y="391" fill="#8aa5b4" font-family="Consolas, monospace" font-size="12" letter-spacing="1">REACT · TYPESCRIPT · FULL STACK · AI · UNITY</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+<title id="title">Saurabh Batra — Frontend-Led Full Stack Engineer</title>
+<desc id="desc">Frontend craft. Full-stack thinking. Animated terminal cursor.</desc>
+<defs><linearGradient id="bg"><stop stop-color="#0c1722"/><stop offset="1" stop-color="#091017"/></linearGradient></defs>
+<rect x="1" y="1" width="1198" height="258" rx="16" fill="url(#bg)" stroke="#28404d"/>
+<g fill="#4b6371"><circle cx="34" cy="25" r="4"/><circle cx="50" cy="25" r="4"/><circle cx="66" cy="25" r="4"/></g>
+<text x="88" y="29" fill="#93adba" font-family="Consolas,monospace" font-size="12">saurabh@github ~ / portfolio</text>
+<path d="M24 45H1176" stroke="#21313e"/>
+<text x="32" y="112" fill="#eff8fb" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="700">SAURABH BATRA</text>
+<text x="34" y="158" fill="#5eead4" font-family="Segoe UI,Arial,sans-serif" font-size="30">Frontend-Led Full Stack Engineer</text>
+<text x="34" y="211" fill="#9ab1bf" font-family="Consolas,monospace" font-size="18">$ Frontend craft. Full-stack thinking.</text>
+<rect class="cursor" x="415" y="196" width="9" height="19" fill="#5eead4"/><g fill="none" stroke="#285563"><path d="M960 65l100 60-100 60-100-60zM960 65v120M860 125h200"/><circle cx="960" cy="125" r="24"/></g><circle cx="960" cy="125" r="7" fill="#5eead4"/></svg>
