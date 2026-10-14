@@ -1,16 +1,34 @@
-## Hi there 👋
+# Hi, I'm Saurabh 👋
 
-<!--
-**shubhbatra1991/shubhbatra1991** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Frontend & Full-Stack Engineer
+Building intelligent products, scalable applications, and interactive experiences.
 
-Here are some ideas to get you started:
+I'm a software engineer working across frontend architecture, full-stack development, cloud technologies, and AI-powered applications.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Featured Engineering Projects
+
+### DealPatch
+An AI-native CRM project focused on modern, data-dense interfaces and productive workflows.
+
+### [SignalOps-AI](https://github.com/shubhbatra1991/SignalOps-AI)
+A self-hostable AI-assisted operational intelligence platform.
+
+## 🎮 Game Development
+
+I also build interactive games, exploring gameplay systems, simulation, and user experience.
+
+**Project Oven** — A cozy bakery and business simulation game.
+
+*Gameplay screenshots coming soon.*
+
+## 🌐 Portfolio
+
+- [Interactive 3D Portfolio](https://3dportfolio-sepia.vercel.app)
+
+## 🛠 Engineering Focus
+
+React · TypeScript · JavaScript · Python · Azure · AI Integration · Unity
+
+---
+
+*Building, experimenting, and learning through real products.*
