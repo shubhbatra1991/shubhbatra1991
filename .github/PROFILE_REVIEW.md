@@ -1,31 +1,35 @@
-# Profile redesign review
+# Compact profile review
 
-Prepared on 14 October 2026. Changes are local; nothing has been pushed or published.
+Updated 14 October 2026. No push or publication performed.
 
-## Design and implementation
+## Current implementation
 
-- Original dark terminal hero with teal/cyan accents, an interface/system diagram, and four rotating engineering phrases. Inspired by the reference video's typographic hierarchy, terminal introduction, and compact technical presentation.
-- Local SVGs: desktop and mobile variants, plus genuinely static equivalents. Animation runs for two 20-second cycles, then rests on the primary role. Both the picture source selection and internal SVG CSS respect reduced motion. No scripts, external fonts, embedded HTML, or remote dependencies inside the hero.
-- GitHub Markdown and supported HTML only: links, pictures, details/summary, a code block, and a toolkit table. Full-width project sections avoid cramped multi-column cards on phones.
-- Actual product media, inspectable project details, explicit demo limitations, and public website links. No statistics-service dependency.
-- Contribution snake is collapsed by default so its indefinite animation is opt-in. Its existing light/dark output URLs are integrated. The existing workflow is unchanged: one workflow, existing contents permission, no added actions.
+Hero and social links preserved. Featured projects use a two-column GitHub HTML table with 300 px 16:9 thumbnails, a title, one-line description, and GitHub / Live Demo links. Duplicate links below the cards are removed. Portfolio previews use the same compact table layout. Project Oven remains a short text entry; skills stay collapsed. Contribution snake is visible by default.
 
-Regenerate all hero variants with `python scripts/generate-hero.py` (standard library only).
+## Real screenshot crops
 
-### Asset organization
+Four new assets were cropped from the existing public screenshots, without stretching. Crops are expressed as left, top, right, bottom in original pixels:
 
-```text
-assets/
-  hero/       Original decorative SVGs; desktop/mobile and reduced-motion variants
-  projects/   Actual project screenshots and existing public portfolio preview
-  games/      Reserved for approved, actual gameplay media; retained by .gitkeep
-```
+- dealpatch-thumb.png: dealpatch-overview.png, (250, 80, 1370, 710), resized proportionally to 640 × 360.
+- signalops-thumb.png: signalops-overview.jpg, (276, 582, 1236, 1122), resized proportionally to 640 × 360. Focus: demo metrics and event chart.
+- personal-website-thumb.png: personal-website.jpg, (100, 70, 1220, 700), resized proportionally to 640 × 360.
+- 3d-portfolio-thumb.png: 3d-portfolio.webp, (56, 2, 584, 299), retained at 528 × 297.
 
-Local README image references use relative paths. The hero and screenshots have their own backgrounds, preserving contrast on GitHub's light and dark canvases. The contribution snake remains the intentional remote exception because its generated images live on the `output` branch.
+Removed the oversized dealpatch-card.png and signalops-card.png composites. Unused original screenshots and unreferenced dealpatch.png / signalops.png have been removed. The crop source names below are historical provenance, not files retained in the repository. The linked Review Queue screenshot is retained.
 
-The PNG screenshots were checked against a lossless optimized encoding; their existing files were already smaller, so they were retained unchanged. The JPEG captures and WebP preview are already compact; no lossy re-encoding was applied to text-heavy interfaces. Original decorative SVGs remain vector assets rather than raster substitutes for product media.
+## Verification and limits
+
+GitHub's POST /markdown API rendered the current README successfully and preserved both tables, image widths, relative sources, and picture sources. This verifies GitHub's renderer, not the final unpublished profile page.
+
+Browser inspection of that returned HTML with local assets measured the featured table at 232.75 px tall and the portfolio table at 214.35 px. All images loaded. Both snake URLs returned HTTP 200; the live dark SVG's snake segment transforms changed between observations, confirming animation. The workflow is unchanged.
+
+Final on-profile verification is pending publication because the new local thumbnail files do not yet exist on GitHub. Table cells remain side by side on narrow screens, as requested; unlike the previous inline cards, they do not stack. GitHub may shrink or horizontally scroll tables on phones.
+
+Hero animation and reduced-motion variants are unchanged. Approved Unity gameplay media remains pending: assets/games/project-oven-gameplay.png and optional project-oven-gameplay.gif. No private source or credentials were copied.
 
 ## Sources and media provenance
+
+Original screenshot filenames in this table record the source of the retained thumbnails; unused originals have been removed.
 
 Only public pages/repositories and information explicitly supplied by the owner were used. No private repository was accessed or modified.
 
@@ -45,33 +49,3 @@ Only public pages/repositories and information explicitly supplied by the owner 
 | Hero SVGs | Original vector artwork generated by `scripts/generate-hero.py`; decorative diagram, not a product screenshot |
 
 Both project repositories were confirmed public through GitHub's public API. Their homepage links returned HTTP 200. The website and Projects page loaded in a browser after initial Vercel checkpoints. The 3D portfolio returned HTTP 200 and exposed chapter navigation, quick view, and 360 explore controls; its WebGL scene did not render correctly in the inspection browser. LinkedIn blocked automated inspection; the owner-supplied URL is retained and is also linked from the website.
-
-## Missing or deliberately pending assets
-
-- Required: `assets/games/project-oven-gameplay.png` — an approved, actual screenshot of the Unity version. Prefer a clean 1280–1600 px-wide capture with readable gameplay/UI and no private overlays. No website game media was reused.
-- Optional: `assets/games/project-oven-gameplay.gif` — an approved short gameplay loop, ideally 3–6 seconds, 640–960 px wide, and under 3 MB. No clip has been fabricated.
-- Optional higher-resolution 3D preview or approved recording. The existing public 640 × 301 preview is usable now.
-
-Other games are omitted to keep this focused and avoid reusing game media without explicit approval. No private source links, implementation details of private projects, credentials, or environment files are included.
-
-## Validation completed locally
-
-- Rendered a temporary GFM preview in a browser, inspecting desktop dark/light canvases and 390 px / 320 px phone widths. No page-wide horizontal overflow; the optional JSON code block scrolls inside its own container at narrow widths.
-- Verified the browser selects the mobile hero at phone widths. Opened the engineering details, both project disclosures, and the contribution snake; all images loaded with no broken images.
-- Observed rotating hero phrases and the final return to the primary role. Parsed all four SVGs; static variants have no animation rules. Reduced-motion source declarations are present, but a device-level reduced-motion preference was not toggled during this audit.
-- Verified all nine referenced local image files, decoded the five raster assets, checked SVG XML and absence of embedded scripts/external content, and ran `git diff --check` successfully.
-- Local media total: 542,589 bytes (about 530 KiB), including both static fallback heroes and the screenshot inside the DealPatch disclosure.
-- Confirmed both output-branch snake URLs and both public project demo homepages return HTTP 200. Confirmed the snake workflow has no diff.
-- Temporary preview HTML is excluded from the deliverables. GitHub's actual Markdown sanitizer and image cache remain a final manual preview check.
-- Follow-up asset organization check: all three asset directories exist; all nine local image references resolve and decode/parse; the missing Unity screenshot is a text placeholder rather than a broken image. No private source files or credentials were added.
-
-## Before publishing
-
-1. Review `README.md` and all files under `assets/`; verify that the showcased public media is suitable for your profile.
-2. Open the README in GitHub's preview when preparing your own commit/PR. Verify picture source selection, details expansion, relative assets, toolkit wrapping, and screenshot links in desktop and phone layouts, in both GitHub themes.
-3. Enable reduced motion in your device/browser. Verify the static hero appears. With normal motion, verify all four phrases and the return to the main role after 40 seconds.
-4. Expand the contribution snake in both themes. The two output-branch URLs returned HTTP 200 during this audit. Confirm the scheduled workflow remains healthy; no rerun is needed for this redesign.
-5. Open both project demos, the personal website, Projects page, 3D experience, LinkedIn, and GitHub links. Check LinkedIn manually and test the 3D scene in a browser with working WebGL.
-6. Review the diff, then commit and push only when you are ready. Asset paths resolve remotely only after the corresponding files and README are published together.
-
-Local preview is an approximation of GitHub-flavored Markdown, not proof of GitHub's sanitizer or image-cache behavior. Final review in GitHub remains necessary before publishing.
