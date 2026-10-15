@@ -1,15 +1,19 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero/terminal-mobile-static.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/terminal-static.svg">
-  <source media="(max-width: 600px)" srcset="assets/hero/terminal-mobile.svg">
-  <img src="assets/hero/terminal.svg" width="100%" alt="Saurabh Batra — Frontend-Led Full Stack Engineer. Building AI-powered products and interactive experiences.">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero/engineering-os-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/engineering-os-static.svg">
+  <source media="(max-width: 600px)" srcset="assets/hero/engineering-os-mobile.svg">
+  <img src="assets/hero/engineering-os.svg" width="100%" alt="Engineering OS — Saurabh Batra, Software Engineer. Full-Stack Systems · AI Applications · Cloud Engineering · Interactive Experiences.">
 </picture>
 
 <p align="center">
 <a href="https://www.saurabhbatra.com/">Website</a> · <a href="https://www.linkedin.com/in/saurabhbat">LinkedIn</a> · <a href="https://www.saurabhbatra.com/projects">Projects</a> · <a href="https://3dportfolio-sepia.vercel.app/">3D Portfolio</a>
 </p>
 
-I'm Saurabh, a frontend-led full-stack engineer building enterprise applications, AI-assisted products, and interactive experiences. I focus on making complex systems intuitive, reliable, and enjoyable to use.
+I'm Saurabh, a **Software Engineer**.
+
+**Full-Stack Systems · AI Applications · Cloud Engineering · Interactive Experiences**
+
+I focus on making complex systems intuitive, reliable, and enjoyable to use.
 
 ## Featured projects
 
@@ -45,18 +49,58 @@ I'm Saurabh, a frontend-led full-stack engineer building enterprise applications
 </tr>
 </table>
 
-**Project Oven · Unity** — Cozy bakery simulation in development. Gameplay preview pending approval.
+**Project Oven · Unity** - Cozy bakery simulation in development. Gameplay preview pending approval.
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/decorations/static-divider.svg">
+  <img src="assets/decorations/animated-divider.svg" width="100%" alt="">
+</picture>
+
+## Technical Arsenal
+
+<p align="center">
+<strong>Languages</strong><br>
+<img src="assets/badges/typescript.svg" height="24" alt="TypeScript">
+<img src="assets/badges/javascript.svg" height="24" alt="JavaScript">
+<img src="assets/badges/csharp.svg" height="24" alt="C#">
+<img src="assets/badges/python.svg" height="24" alt="Python (exploring)">
+</p>
+
+<p align="center">
+<strong>Frameworks & Runtimes</strong><br>
+<img src="assets/badges/react.svg" height="24" alt="React">
+<img src="assets/badges/nextjs.svg" height="24" alt="Next.js">
+<img src="assets/badges/nodejs.svg" height="24" alt="Node.js">
+<img src="assets/badges/dotnet.svg" height="24" alt=".NET">
+</p>
+
+<p align="center">
+<strong>Databases</strong><br>
+<img src="assets/badges/postgresql.svg" height="24" alt="PostgreSQL">
+<img src="assets/badges/indexeddb.svg" height="24" alt="IndexedDB">
+</p>
+
+<p align="center">
+<strong>Cloud & DevOps</strong><br>
+<img src="assets/badges/azure.svg" height="24" alt="Azure">
+<img src="assets/badges/github-actions.svg" height="24" alt="GitHub Actions">
+<img src="assets/badges/git.svg" height="24" alt="Git">
+</p>
+
+<p align="center">
+<strong>AI & Data</strong><br>
+<img src="assets/badges/llm.svg" height="24" alt="LLM APIs">
+<img src="assets/badges/rag.svg" height="24" alt="RAG">
+</p>
+
+<p align="center">
+<strong>Creative Engineering</strong><br>
+<img src="assets/badges/unity.svg" height="24" alt="Unity">
+<img src="assets/badges/threejs.svg" height="24" alt="Three.js">
+</p>
 
 <details>
-<summary><strong>$ cat engineering-focus — skills & project details</strong></summary>
-
-| Focus | Toolkit |
-| :--- | :--- |
-| Frontend | React · TypeScript · Next.js · Tailwind CSS · TanStack |
-| Backend & cloud | C#/.NET · Node.js · APIs · Azure · GitHub Actions |
-| AI | Conversational interfaces · LLM workflows · RAG · Python exploration |
-| Interactive | Three.js · React Three Fiber · Unity |
-| Quality | Playwright · Vitest · Zod |
+<summary><strong>Project implementation notes</strong></summary>
 
 **DealPatch:** local-first, fictional-data CRM with proposal diffs, selective approvals, audit and undo. AI analysis is simulated. Uses Dexie/IndexedDB for browser persistence. [Review Queue screenshot](assets/projects/dealpatch-review-queue.png).
 
@@ -68,12 +112,16 @@ I'm Saurabh, a frontend-led full-stack engineer building enterprise applications
 
 </details>
 
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/decorations/static-divider.svg">
+  <img src="assets/decorations/animated-divider.svg" width="100%" alt="">
+</picture>
+
 ## Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shubhbatra1991/shubhbatra1991/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shubhbatra1991/shubhbatra1991/output/github-contribution-grid-snake.svg">
-  <img src="https://raw.githubusercontent.com/shubhbatra1991/shubhbatra1991/output/github-contribution-grid-snake.svg" width="100%" alt="Animated snake tracing Saurabh Batra's GitHub contribution grid. Open the GitHub profile below for the native contribution history.">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/shubhbatra1991/shubhbatra1991/output/commit-defender-static.svg">
+  <img src="https://raw.githubusercontent.com/shubhbatra1991/shubhbatra1991/output/commit-defender.svg" width="100%" alt="Commit Defender: an animated spaceship over Saurabh Batra's public GitHub contribution calendar. Decorative effects; original activity remains available below.">
 </picture>
 
 [Native GitHub activity →](https://github.com/shubhbatra1991?tab=overview)

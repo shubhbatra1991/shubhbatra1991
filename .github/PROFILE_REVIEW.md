@@ -2,9 +2,23 @@
 
 Updated 14 October 2026. No push or publication performed.
 
-## Current implementation
+## Technical Arsenal refinement — 15 October 2026
 
-Hero and social links preserved. Featured projects use a two-column GitHub HTML table with 300 px 16:9 thumbnails, a title, one-line description, and GitHub / Live Demo links. Duplicate links below the cards are removed. Portfolio previews use the same compact table layout. Project Oven remains a short text entry; skills stay collapsed. Contribution snake is visible by default.
+Branch: codex/technical-arsenal. No commit or push. Pre-existing README edits preserved.
+
+Replaced the hidden skills table with six visible centered groups and 17 local Shields.io SVG badges (24 px display height). Badge labels, colors, and Simple Icons slugs are recorded in assets/badges/sources.json; downloads use https://img.shields.io/badge/{label}-{color}?style=flat&logo={slug}&logoColor=white. Azure, IndexedDB, LLM APIs and RAG use text-only badges; C# uses the .NET family icon. No invented logo artwork.
+
+Evidence: React, TypeScript, Next.js and IndexedDB from the public DealPatch README/manifest; JavaScript from its public language listing; C#/.NET and Azure from the personal website; Node.js, PostgreSQL (FounderOS), Three.js and RAG from the previously reviewed public Projects page; LLM APIs from SignalOps-AI; Git/GitHub Actions from these public repositories. Unity is owner-confirmed. Python remains explicitly labeled exploring. C++, Docker, SQL Server, MySQL and Express were not established by the reviewed evidence and were omitted.
+
+Two instances of the original assets/decorations/animated-divider.svg bracket the Arsenal and implementation notes. A cyan pulse traverses a thin line every seven seconds. SVG-contained CSS requires no JavaScript or README styles. Reduced-motion CSS hides the pulse, and the picture source selects static-divider.svg. Hero, project thumbnails, links and snake workflow are unchanged by this refinement.
+
+Verification: GitHub Markdown API accepted the markup and retained picture sources and badge dimensions. Browser preview loaded every image; the divider transform changed between observations. All new SVGs parse successfully. The published main-branch hero SVG loads. New divider animation on the actual GitHub profile remains unverified until an approved publish; the published hero's blinking was not conclusively sampled in this run. Reduced-motion device selection and mobile layout need final GitHub review. No broken assets were found.
+
+Before/after browser captures are provided in the chat. They use local assets; the after capture uses GitHub-rendered HTML with a local preview stylesheet. They are not screenshots of a published change.
+
+## Previous compact-layout implementation
+
+Hero and social links preserved. Featured projects use a two-column GitHub HTML table with 300 px 16:9 thumbnails, a title, one-line description, and GitHub / Live Demo links. Duplicate links below the cards are removed. Portfolio previews use the same compact table layout. Project Oven remains a short text entry; implementation notes stay collapsed. Contribution snake is visible by default.
 
 ## Real screenshot crops
 

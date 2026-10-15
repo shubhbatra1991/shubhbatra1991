@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 16" role="img" aria-label="Decorative cyan divider">
+<defs><linearGradient id="pulse"><stop stop-color="#22d3ee" stop-opacity="0"/><stop offset=".8" stop-color="#22d3ee" stop-opacity=".7"/><stop offset="1" stop-color="#5eead4"/></linearGradient></defs>
+<style>.pulse{animation:travel 7s linear infinite}@keyframes travel{from{transform:translateX(-180px)}to{transform:translateX(1180px)}}@media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:0}}</style>
+<path d="M0 8H1000" stroke="#397580" stroke-opacity=".6"/>
+<g class="pulse"><path d="M-160 8H0" stroke="url(#pulse)" stroke-width="2"/><circle cy="8" r="2.5" fill="#5eead4"/></g>
+</svg>

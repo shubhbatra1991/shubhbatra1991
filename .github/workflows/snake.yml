@@ -1,5 +1,5 @@
 
-name: Generate Contribution Snake
+name: Generate Commit Defender
 
 on:
   schedule:
@@ -20,15 +20,15 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate snake animations
-        uses: Platane/snk/svg-only@v3
+      - name: Check out profile generator
+        uses: actions/checkout@v4
         with:
-          github_user_name: shubhbatra1991
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+
+      - name: Generate from unauthenticated public calendar
+        run: |
+          python3 scripts/test-commit-defender.py
+          python3 scripts/generate-commit-defender.py --output dist
 
       - name: Publish animations
         uses: crazy-max/ghaction-github-pages@v3.1.0
