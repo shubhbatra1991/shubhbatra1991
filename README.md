@@ -99,19 +99,6 @@ I focus on making complex systems intuitive, reliable, and enjoyable to use.
 <img src="assets/badges/threejs.svg" height="24" alt="Three.js">
 </p>
 
-<details>
-<summary><strong>Project implementation notes</strong></summary>
-
-**DealPatch:** local-first, fictional-data CRM with proposal diffs, selective approvals, audit and undo. AI analysis is simulated. Uses Dexie/IndexedDB for browser persistence. [Review Queue screenshot](assets/projects/dealpatch-review-queue.png).
-
-**SignalOps-AI:** deterministic analytics, feedback, funnels and browser-local Product Missions. Optional self-hosted AI research supports OpenAI, Groq, Anthropic and Z.ai; provider requests are disabled in the public demo. Production ingestion, authentication and shared cloud workspaces are not implemented.
-
-**Game media needed:** `assets/games/project-oven-gameplay.png`; optional `assets/games/project-oven-gameplay.gif`. Only approved captures of the Unity version will be used.
-
-[More projects](https://www.saurabhbatra.com/projects) · [GitHub](https://github.com/shubhbatra1991)
-
-</details>
-
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/decorations/static-divider.svg">
   <img src="assets/decorations/animated-divider.svg" width="100%" alt="">
